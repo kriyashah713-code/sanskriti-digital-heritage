@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="no-referrer" />
+    <title>SANSKRITI — India's Living Digital Heritage Archive</title>
+    <meta name="description" content="A world-class digital archive preserving India's architectural wonders, monuments, living traditions, and cultural heritage through cinematic 3D models, interactive maps, and AI-grounded research." />
+    <meta property="og:title" content="SANSKRITI — India's Living Digital Heritage Archive" />
+    <meta property="og:description" content="A world-class digital archive preserving India's architectural wonders, monuments, living traditions, and cultural heritage through cinematic 3D models, interactive maps, and AI-grounded research." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+      window.gm_authFailure = () => {
+        window.dispatchEvent(new CustomEvent('gmp-quota-exceeded'));
+      };
+      const origError = console.error;
+      console.error = (...args) => {
+        origError.apply(console, args);
+        const msg = args.map((a) => String(a)).join(' ');
+        if (msg.includes('OverQuotaMapError') || msg.includes('QuotaExceededError')) {
+          window.dispatchEvent(new CustomEvent('gmp-quota-exceeded'));
+        }
+      };
+    </script>
+  </head>
+  <body class="bg-[#0c1410] text-[#f4efe6] antialiased selection:bg-[#c5a059] selection:text-[#0c1410]">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

@@ -1,0 +1,6 @@
+{
+  "name": "SANSKRITI — India's Living Digital Heritage Archive",
+  "description": "A world-class digital archive preserving India's architectural wonders, monuments, living traditions, and cultural heritage through cinematic 3D models, interactive maps, and AI-grounded research.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
